@@ -1,0 +1,79 @@
+.wrapper {
+  padding: 10px 0;
+}
+
+#wrapper-socials {
+  background-color: $secondary;
+
+  a {
+    color: #fff !important;
+  }
+}
+
+.mh-logo {
+  img {
+    object-fit: contain;
+    width: 221px;
+  }
+}
+
+// Nav
+#main-nav {
+  padding: 0 16px;
+
+  .dropdown-menu {
+    background-color: $primary;
+  }
+  a.nav-link {
+    padding: 35px 8px;
+  }
+  .dropdown-menu {
+    top: 95%;
+    border-radius: 0;
+    border-top: 5px solid $secondary;
+  }
+  .dropdown-item {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-item:hover {
+    background-color: $primary-700;
+    color: #fff;
+  }
+}
+
+// Facebook widget
+.fb_dialog {
+  z-index: 999 !important;
+}
+
+// Social widget
+.social-widget {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li a:hover {
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #wrapper-socials {
+    display: none;
+  }
+  #main-nav {
+    padding: 5px;
+  }
+  a.nav-link {
+    text-align: center;
+  }
+}

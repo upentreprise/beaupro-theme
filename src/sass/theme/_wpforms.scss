@@ -1,0 +1,19 @@
+.wpforms-field-label {
+	font-weight: 500 !important;
+}
+
+.wpforms-container {
+	padding: 80px !important;
+	text-align: left;
+}
+
+.bg-gray {
+	background-color: #f7f7f7;
+	margin-bottom: 0;
+}
+
+@include media-breakpoint-down(md) {
+	.wpforms-container {
+		padding: 30px !important;
+	}
+}

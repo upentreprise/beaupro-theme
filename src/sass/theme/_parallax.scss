@@ -1,0 +1,47 @@
+.parallax {
+	& > div {
+		padding: 20px;
+	}
+	.w .m {
+		margin-left: 48px;
+	}
+	.f-75 {
+		font-size: 75px;
+	}
+	.fa {
+		color: #fff;
+	}
+	h3 {
+		color: #fff;
+		text-align: left;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	a:hover {
+		text-decoration: none;
+		color: $secondary;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.parallax {
+		.w {
+			margin-top: 20px;
+			.m {
+				margin-left: 25px;
+			}
+		}
+		.f-75 {
+			font-size: 50px;
+		}
+		h3 {
+			font-size: 15px;
+		}
+		a {
+			font-size: 15px;
+		}
+	}
+}

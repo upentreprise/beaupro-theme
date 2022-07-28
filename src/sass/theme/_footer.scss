@@ -1,0 +1,76 @@
+// Pre footer
+
+.footer-widget {
+	h5 {
+		color: #fff;
+		font-size: 32px;
+	}
+
+	ul {
+		padding-left: 0;
+		li {
+			margin: 20px 0px;
+			list-style: none;
+			&::before {
+				@include fa-icon();
+				content: $fa-var-chevron-right;
+				color: $secondary;
+				margin-right: 5px;
+			}
+			a {
+				color: #fff;
+				font-size: 20px;
+				.dashicons {
+					line-height: 1.5;
+				}
+			}
+			a:hover {
+				text-decoration: none;
+				color: $secondary;
+			}
+		}
+	}
+}
+
+// My stuff
+
+.tooltip-title {
+	color: #fff;
+}
+
+#tooltip-benz {
+	font-size: 14px;
+	display: none;
+	position: absolute;
+	top: -75px;
+	left: -30px;
+	padding: 4px 8px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	border-radius: 4px;
+
+	&:target {
+		display: block;
+	}
+}
+
+.site-info {
+	color: #fff;
+}
+
+#coder {
+	color: #fff;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	&:hover {
+		color: $secondary;
+		text-decoration: none;
+	}
+}
+
+#wrapper-footer {
+	background-color: $primary;
+	padding: 20px 0;
+}

@@ -1,0 +1,50 @@
+.bpcard {
+	.eael-entry-wrapper {
+		position: relative;
+		background: $secondary;
+
+		.eael-entry-title {
+			margin: 0;
+		}
+
+		header {
+			font-size: 20px;
+
+			&::before {
+				border: 8px solid;
+				border-top-color: #fff;
+				border-right-color: #558831;
+				border-bottom-color: #558831;
+				border-left-color: #fff;
+				content: " ";
+				position: absolute;
+				left: -16px;
+				top: -16px;
+				width: 0;
+			}
+			&::after {
+				content: " ";
+				position: absolute;
+				left: -16px;
+				top: 0;
+				width: 16px;
+				height: 100%;
+				background-color: $secondary;
+			}
+			a {
+				color: #fff !important;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.bpcard {
+		.eael-entry-wrapper {
+			header {
+				font-size: 16px;
+			}
+		}
+	}
+}
